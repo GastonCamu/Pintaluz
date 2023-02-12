@@ -1,0 +1,290 @@
+
+/* Reseteador de pagina */
+
+*{margin: 0; padding: 0;}
+
+/* Importacion de fuentes */
+
+@import url('https://fonts.googleapis.com/css2? family= Alfa+Slab+One & family= Passion+One:wght@700 & family= Poppins & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Oswald:wght@300&family=Passion+One:wght@700&family=Poppins&display=swap');
+
+/* Inicio de codigo */
+
+*{
+    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Passion One', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    position: relative;
+    padding-bottom: 190px;
+}
+
+/* Inicio de Header */
+
+    .encabezado{
+       border: 1px;
+       margin: 1px 5px 1px 5px;
+       height: 75px;
+       width: 99%;
+    }
+
+        .logo{
+            display: inline-block;
+            text-decoration: none;
+            font-weight: bold;
+            font-size:45px;
+            font-family: 'Alfa Slab One', cursive;
+            font-family: 'Passion One', cursive;
+            font-family: 'Poppins', sans-serif;
+            margin-top: 13px;
+            color: black;
+        }
+
+        .barra-navegador{
+            display: inline-block;
+            margin-left: 130px;
+        }
+
+            .navegador{
+                display: inline-block;
+                margin-right: 15px;
+                margin-left: 15px;
+            }
+
+                .enlace{
+                    text-decoration: none;
+                    color: black;
+                }
+
+        .contact-pri{
+            display: inline-block;
+            position: absolute;
+            margin-left: 50px;
+            padding-top: 20px;
+        }
+
+/* Fin de Header */
+
+/* Inicio de section index */
+
+        .titulo{
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.571);
+            font-size: 60px;
+        }
+
+            .img-principal{
+                width: 99%;
+                border: 1px;
+                margin-left: 1px;
+                margin-right: 1px;
+            }
+
+            .frase{
+                background-color: rgb(183, 34, 34);
+                height: 55px;
+                font-size: 30px;
+                text-align: center;
+                padding-top: 20px;
+                font-weight: bold;   
+            }
+
+            .new_pro_caja{
+                height: 40px;
+                font-size: 33px;
+                font-weight: bolder;
+                margin-top: 10px;
+                margin-left: 10px;
+                margin-bottom: 20px;
+            }
+
+                .new_pro_text{
+                    display: inline-block;
+                    margin-right: 750px;
+                }
+
+                    .boton_img{
+                        border: 3px solid rgba(176, 9, 9, 0.767);
+                        width: 25px;
+                        height: 25px;
+                        padding: 1px 1px 1px 1px;
+                        margin-top: 2px;
+                    }
+
+            .new_pro{
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+                .oferta_pri{
+                    width: 250px;
+                    height: 300px;
+                    border: 5px ridge rgba(0, 0, 0, 0.874);
+                    margin-right: 30px;
+                    margin-left: 30px;
+                }
+
+            .pre_ofer{
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+                .oferta_pri_precio{
+                    display: inline-block;
+                    margin-left: 9%;
+                    margin-right: 9%;
+                    font-size: 25px;
+                    font-weight: bolder;
+                }
+
+/* Fin de section index */
+
+/* Inicio de section acerca de nosotros */
+
+            .T-nosotros{
+                font-size: 30px;
+                margin-left: 5px;
+                margin-bottom: 10px;
+            }
+            .info-nosotros{
+                display: inline-block;
+                background-color: lightgray;
+                font-size: 23px;
+                margin-left: 5px;
+                width: 65%;
+                margin-bottom: 80px;
+            }
+
+/* Fin de section acerca de nosotros */
+
+/* Inicio de section novedades */
+
+            .T-novedades{
+                font-size: 30px;
+                margin-left: 5px;
+                margin-bottom: 5px;
+            }
+
+            .marca-nov{
+                width: 800px;
+            }
+
+                .info-novedades{
+                    display: inline-block;
+                    font-size: 21px;
+                    margin-left: 5px;
+                    width: 60%;
+                    margin-bottom: 80px;
+                }
+
+/* Fin de section novedades */
+
+/* Inicio de section ofertas */
+
+            .T-ofertas{
+                font-size: 30px;
+                margin-left: 5px;
+                margin-bottom: 10px;  
+            }
+
+                .info-ofertas{
+                    display: inline-block;
+                    font-size: 21px;
+                    margin-left: 5px;
+                    width: 60%;
+                    margin-bottom: 30px;
+                    margin-top: 10px;
+                }
+
+                .video-oferta{
+                    width: 1000px;
+                    height: 500px;
+                    margin-left: 5px;
+                }
+
+/* Fin de section ofertas */
+
+/* Inicio de section contacto */
+
+            .caja-mapa{
+                text-align: center;
+            }
+
+                .mapa{
+                    display: inline-block;
+                    width: 850px;
+                    height: 600px;
+                }
+
+                .T-contacto{
+                    font-size: 30px;
+                }
+
+                .P1-contacto{
+                    font-size: 25px;
+                    margin-bottom: 10px;
+                    margin-top: 10px;
+                }
+                .P2-contacto{
+                    font-size: 17px;
+                    margin-bottom:7px ;
+                }
+
+            .caja-info-contacto{
+                text-align: center;
+                font-size: 15px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            .caja-form-contacto{
+                text-align: center;
+            }
+
+                .formulario{
+                    display: inline-block;
+                    width: 300px;
+                    height: 35px;
+                    border: 2px ridge black;
+                    margin-top: 25px;
+                    padding-left: 2px;
+                }
+
+/* FIn de section contacto */
+
+/* Inicio de footer */
+
+    .pie-de-pagina{
+        background-color: rgb(79, 93, 107);
+        position: absolute;
+        bottom: 0;
+        height: 180px;
+        width: 100%;
+    }
+
+        .mision{
+            display: inline-block;
+            font-size: 23px;
+            width: 550px;
+            margin-top: 33px;
+            margin-left: 70px;
+            font-weight: bolder;
+        }
+
+        .info-contact{
+            display: inline-block;
+            margin-left: 230px;
+        }
+
+            .img-foot{
+                width: 70px;
+                height: 70px;
+                margin-left: 15px;
+                margin-right: 25px;
+                padding-bottom: 15px;
+            }
+
+/* Fin de footer */
