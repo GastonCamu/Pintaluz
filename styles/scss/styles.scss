@@ -199,7 +199,7 @@ body{
             p{
 
                 font-size: 20px;
-                
+
             }
         }
     }
@@ -392,7 +392,7 @@ body{
 
 body{
 
-    section{
+    section.ofertas{
 
         display: flex;
         flex-flow: column;
@@ -415,8 +415,8 @@ body{
 
             iframe.video__oferta{
 
-                width: 30rem;
-                height: 18rem;
+                width: 25rem;
+                height: 15rem;
 
             }
         }
@@ -555,7 +555,9 @@ body{
 
                 p{
 
-                    font-size: 26px;
+                    margin-bottom: 20px;
+                    font-size: 20px;
+                    text-align: center;
 
                 }
             }
