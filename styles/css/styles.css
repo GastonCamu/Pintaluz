@@ -188,19 +188,19 @@ body section article div p {
   }
   body section.ofertas article {
     margin: 5px;
-    align-items: center;
   }
   body section.ofertas article div.ofertas__div--p p {
     font-size: 20px;
-    text-align: center;
+    width: 90%;
   }
   body section.ofertas article iframe.video__oferta {
-    width: 25rem;
+    width: 100%;
     height: 15rem;
   }
   body section.novedades {
     display: flex;
     flex-flow: column;
+    align-items: center;
   }
   body section.novedades article {
     text-align: center;
@@ -212,7 +212,7 @@ body section article div p {
     margin: 5px;
   }
   body section.novedades article img {
-    width: 25rem;
+    width: 20rem;
     margin: 5px;
   }
   body section.novedades article p {
@@ -259,6 +259,10 @@ body section article div p {
     background-color: rgba(201, 0, 0, 0.692);
     border: none;
     border-radius: 10px rgba(73, 0, 0, 0.678);
+  }
+  body section.acerca-de-nosotros {
+    display: flex;
+    align-items: center;
   }
   body section.acerca-de-nosotros article {
     display: flex;
