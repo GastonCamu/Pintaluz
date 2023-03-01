@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Oswald:wght@300&family=Passion+One:wght@700&family=Poppins&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+* {
+  font-family: "Alfa Slab One", cursive;
+  font-family: "Oswald", sans-serif;
+  font-family: "Passion One", cursive;
+  font-family: "Poppins", sans-serif;
+}
+
+body nav div a.navbar-brand img.logo {
+  width: 120px;
+  height: 70px;
+}
+body nav div a.navbar-brand:hover {
+  background-color: rgba(0, 0, 0, 0.397);
+  border-radius: 20px;
+}
+body nav div div ul li {
+  display: flex;
+  align-items: center;
+}
+body nav div div ul li a.nav-link {
+  margin-left: 60px;
+  margin-right: 60px;
+  padding: 1px;
+  border-radius: 12px;
+}
+body nav div div ul li a.nav-link:hover {
+  background-color: #ff2a54;
+  padding: 8px;
+  border-radius: 12px;
+}
+body footer {
+  background-color: #4C4C4C;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+body footer div.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+body footer div.container div.footer-text {
+  font-size: 18px;
+  width: 35%;
+  color: white;
+  font-weight: bolder;
+}
+body footer div.container div.footer-text:hover {
+  background-color: rgba(0, 0, 0, 0.9176470588);
+  padding: 10px;
+  border-radius: 5px;
+}
+body footer div.container div.footer__images a img.footer__images--img {
+  width: 70px;
+  height: 70px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+body footer div.container div.footer__images a img.footer__images--img:hover {
+  width: 100px;
+  height: 100px;
+}
+
+body section.ofertas article {
+  margin: 10px;
+}
+body section.ofertas article div.ofertas__div--p p {
+  font-size: 20px;
+}
+body section.ofertas article iframe.video__oferta {
+  width: 750px;
+  height: 350px;
+}
+
+body section.novedades {
+  display: flex;
+  flex-flow: column;
+}
+body section.novedades article h2 {
+  font-size: 35px;
+}
+body section.novedades article img {
+  width: 35rem;
+}
+body section.novedades article p {
+  font-size: 20px;
+}
+
+body div.container__contacto {
+  display: flex;
+  justify-content: space-evenly;
+}
+body div.container__contacto div.maps {
+  margin: 7px;
+  display: flex;
+}
+body div.container__contacto div.maps iframe.maps-element {
+  width: 42rem;
+  height: 35rem;
+}
+body div.container__contacto div.contacto-text {
+  display: flex;
+  flex-flow: column;
+  flex-wrap: nowrap;
+  margin: 7px;
+}
+body div.master__container__form {
+  display: flex;
+  justify-content: center;
+}
+body div.master__container__form div.container__form__contacto {
+  margin: 7px;
+  padding: 10px;
+  width: 50rem;
+  height: 25rem;
+  display: flex;
+  flex-flow: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: center;
+  text-align: center;
+  font-weight: bolder;
+  border: 10px solid rgba(0, 0, 0, 0.459);
+  background-color: rgba(0, 0, 0, 0.123);
+}
+body div.master__container__form div.container__form__contacto:hover {
+  background-color: rgba(201, 0, 0, 0.692);
+  border: none;
+  border-radius: 10px rgba(73, 0, 0, 0.678);
+}
+
+body section article {
+  display: flex;
+  flex-flow: column;
+  width: 60%;
+  margin: 20px;
+}
+body section article h1 {
+  font-size: 45px;
+}
+body section article div p {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 770px) {
+  body footer {
+    display: grid;
+    grid-template-areas: "nav          nav       " "carousel     carousel  " "footer       footer    ";
+    background-color: rgba(0, 0, 0, 0.74);
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  body footer div.container {
+    text-align: center;
+    grid-area: footer;
+    display: block;
+  }
+  body footer div.container div.footer-text {
+    font-size: 16px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+    color: white;
+    font-weight: bolder;
+  }
+  body footer div.container div.footer__images a img.footer__images--img {
+    width: 50px;
+    height: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  body nav.navbar {
+    grid-area: nav;
+  }
+  body div#carouselExampleAutoplaying {
+    grid-area: carousel;
+  }
+  body section {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+  body section article {
+    margin: 5px;
+    align-items: center;
+  }
+  body section article div.ofertas__div--p p {
+    font-size: 20px;
+    text-align: center;
+  }
+  body section article iframe.video__oferta {
+    width: 30rem;
+    height: 18rem;
+  }
+  body section.novedades {
+    display: flex;
+    flex-flow: column;
+  }
+  body section.novedades article {
+    text-align: center;
+    width: 20rem;
+    margin: 20px;
+  }
+  body section.novedades article h2 {
+    font-size: 40px;
+    margin: 5px;
+  }
+  body section.novedades article img {
+    width: 25rem;
+    margin: 5px;
+  }
+  body section.novedades article p {
+    font-size: 23px;
+    margin: 10px;
+  }
+  body div.container__contacto {
+    display: flex;
+    flex-direction: column;
+  }
+  body div.container__contacto div.maps {
+    margin: 5px;
+    display: flex;
+  }
+  body div.container__contacto div.maps iframe.maps-element {
+    display: flex;
+    width: 30rem;
+    height: 20rem;
+  }
+  body div.container__contacto div.contacto-text {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 5px;
+  }
+  body div.master__container__form {
+    display: flex;
+    justify-content: center;
+  }
+  body div.master__container__form div.container__form__contacto {
+    margin: 5px;
+    padding: 5px;
+    width: 17rem;
+    height: 23rem;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    font-weight: bolder;
+    border: 5px solid rgba(0, 0, 0, 0.459);
+    background-color: rgba(0, 0, 0, 0.123);
+  }
+  body div.master__container__form div.container__form__contacto:hover {
+    background-color: rgba(201, 0, 0, 0.692);
+    border: none;
+    border-radius: 10px rgba(73, 0, 0, 0.678);
+  }
+  body section.acerca-de-nosotros article {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    width: 100%;
+    margin: 10px;
+  }
+  body section.acerca-de-nosotros article h1 {
+    font-size: 40px;
+  }
+  body section.acerca-de-nosotros article div {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 80%;
+    margin: 10px;
+  }
+  body section.acerca-de-nosotros article div p {
+    font-size: 26px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
