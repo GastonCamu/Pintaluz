@@ -14,6 +14,26 @@
 body nav div a.navbar-brand img.logo {
   width: 120px;
   height: 70px;
+  animation-name: anime--logo--nav;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-duration: 2s;
+  animation-delay: 1s;
+}
+@keyframes anime--logo--nav {
+  0% {
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 30px;
+  }
+  50% {
+    background-color: transparent;
+    border: 20px;
+  }
+  100% {
+    background-color: transparent;
+    border-radius: 20px;
+  }
 }
 body nav div a.navbar-brand:hover {
   background-color: rgba(0, 0, 0, 0.397);
@@ -187,14 +207,16 @@ body section article div p {
     align-items: center;
   }
   body section.ofertas article {
+    display: flex;
+    align-items: center;
     margin: 5px;
   }
   body section.ofertas article div.ofertas__div--p p {
     font-size: 20px;
-    width: 90%;
+    width: 100%;
   }
   body section.ofertas article iframe.video__oferta {
-    width: 100%;
+    width: 140%;
     height: 15rem;
   }
   body section.novedades {

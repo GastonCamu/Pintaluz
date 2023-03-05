@@ -35,15 +35,58 @@ body {
                     width: 120px;
                     height: 70px; 
 
+                    // Animacion logo a la izquierda del nav
+
+                    // Nombre de la animacion
+                    animation-name: anime--logo--nav;
+                    // Ciclos de ejecucion
+                    animation-iteration-count: 1;
+                    // velocidad del efecto de animacion
+                    animation-timing-function: ease-out;
+                    // Duracion de la animacion
+                    animation-duration: 2s;
+                    // Delay que demora la animacion al cargar la pagina
+                    animation-delay: 1s;
+
+                @keyframes anime--logo--nav {
+
+                    0%{
+
+                        background-color: transparent;
+                        border-radius: 20px;
+                        padding: 30px;
+
+                    }
+
+                    50%{
+
+                        background-color: transparent;
+                        border: 20px;
+
+                    }
+
+                    100%{
+
+                        background-color: transparent;
+                        border-radius: 20px;
+
+                    }
+                    
+                }  
+
+
+
                 }
             }
 
             // Hover del enlace de logo
             a.navbar-brand:hover{
+
                 background-color: rgba(0, 0, 0, 0.397);
                 border-radius: 20px;  
 
             }
+
             div{
 
                 ul{
@@ -59,6 +102,7 @@ body {
                             margin-right: 60px;
                             padding: 1px;
                             border-radius: 12px;
+
                         }
 
                         // Hover de los enlaces de redireccion del nav
@@ -183,6 +227,7 @@ body{
         display: flex;
         flex-flow: column;
 
+        // Sub contenedor de novedades que contiene titulo, img y un parrafo
         article{
 
             h2{
@@ -266,6 +311,7 @@ body{
             background-color: rgba(0, 0, 0, 0.123);
 
         }
+
         // Hover de sub contenedor de formulario de contacto
         div.container__form__contacto:hover{
 
@@ -285,6 +331,7 @@ body{
 
     section{
 
+        // Contenedor principal de acerca de nosotros. contiene un titulo
         article{
 
             display: flex;
@@ -297,7 +344,7 @@ body{
                 font-size: 45px;
 
             }
-
+            // Sub contenedor de acerca de nosotros. contiene un parrafo
             div{
 
                 p{
@@ -392,6 +439,7 @@ body{
 
 body{
 
+    // Contenedor principal de oferta
     section.ofertas{
 
         display: flex;
@@ -399,21 +447,24 @@ body{
         align-items: center;
 
         article{
-
+            display: flex;
+            align-items: center;
             margin: 5px;
 
+            // Sub contenedor de parrafo
             div.ofertas__div--p{
                 p{
 
                     font-size: 20px;
-                    width: 90%;
+                    width: 100%;
 
                 }
             }
 
+            // Elemento video de youtube
             iframe.video__oferta{
 
-                width: 100%;
+                width: 140%;
                 height: 15rem;
 
             }
@@ -426,25 +477,40 @@ body{
 // Inicio novedades.html adaptacion mobile
 
 body{
+
+    // Contenedor principal de novedades
     section.novedades{
+
         display: flex;
         flex-flow: column;
         align-items: center;
+
+        // Sub contenedor de novedades que contiene titulo, img y un parrafo
         article{
+
             text-align: center;
             width: 20rem;
             margin: 20px;
+
             h2{
+
                 font-size: 40px;
                 margin: 5px;
+
             }
+
             img{
+
                 width: 20rem;
                 margin: 5px;
+
             }
+
             p{
+
                 font-size: 23px;
                 margin: 10px;
+
             }
         }
     }
@@ -529,8 +595,11 @@ body{
 body{
 
     section.acerca-de-nosotros{
+
         display: flex;
         align-items: center;
+
+        // Contenedor principal de acerca de nosotros que contiene un titulo
         article{
 
             display: flex;
@@ -545,6 +614,7 @@ body{
 
             }
 
+            // Sub contenedor de acerca de nosotros que contiene un parrafo
             div{
 
                 display: flex;
