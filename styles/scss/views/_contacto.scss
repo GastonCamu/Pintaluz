@@ -1,0 +1,152 @@
+// Inicio contacto.html
+
+body{
+
+    // Contenedor de mapa y caja de informacion de contacto
+    div.container__contacto{
+
+        display: flex;
+        justify-content: space-evenly;
+
+        // subcontenedor de mapa
+        div.maps{
+
+            margin: 7px;
+            display: flex;
+
+            // Elemento mapa
+            iframe.maps-element{
+                width: 42rem;
+                height: 35rem;
+
+            }
+        }
+
+        // Sub contenedor de informacion de contacto
+        div.contacto-text{
+
+            display: flex;
+            flex-flow: column;
+            flex-wrap: nowrap;
+            margin: 7px;
+
+        }
+    }
+
+    // Contenedor de formulario de contacto
+    div.master__container__form{
+
+        display: flex;
+        justify-content: center;
+
+        // Sub contenedor de formulario de contacto
+        div.container__form__contacto{
+
+            margin: 7px;
+            padding: 10px;
+            width: 50rem;
+            height: 25rem;
+            display: flex;
+            flex-flow: column;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-content: center;
+            text-align: center;
+            font-weight: bolder;
+            border: 10px solid rgba(0, 0, 0, 0.459);
+            background-color: rgba(0, 0, 0, 0.123);
+
+        }
+
+        // Hover de sub contenedor de formulario de contacto
+        div.container__form__contacto:hover{
+
+            background-color: rgba(201, 0, 0, 0.692);
+            border: none;
+            border-radius: 10px rgba(73, 0, 0, 0.678);
+
+        }
+    }
+}
+
+// Fin contacto.html
+
+// Adaptacion mobile
+
+// Apertura media screen
+@media screen and (max-width: 770px){
+
+// Inicio contacto.html adaptacion mobile
+
+body{
+
+    // Contenedor de mapa y caja de informacion de contacto adaptacion mobile
+    div.container__contacto{
+
+        display: flex;
+        flex-direction: column;
+
+        // Sub contenedor de mapa adaptacion mobile
+        div.maps{
+
+            margin: 5px;
+            display: flex;
+
+            // Elemento mapa adaptacion mobile
+            iframe.maps-element{
+
+                display: flex;
+                width: 30rem;
+                height: 20rem;
+
+            }
+        }
+
+        // Sub contenedor de informacion de contacto adaptacion mobile
+        div.contacto-text{
+
+            display: flex;
+            flex-flow: column;
+            flex-wrap: nowrap;
+            align-items: center;
+            margin: 5px;
+
+        }
+    }
+
+    // Contenedor de formulario de contacto adaptacion mobile
+    div.master__container__form{
+
+        display: flex;
+        justify-content: center;
+
+        // Sub contenedor de formulario de contacto adaptacion mobile
+        div.container__form__contacto{
+
+            margin: 5px;
+            padding: 5px;
+            width: 17rem;
+            height: 23rem;
+            display: flex;
+            flex-flow: column;
+            text-align: center;
+            font-weight: bolder;
+            border: 5px solid rgba(0, 0, 0, 0.459);
+            background-color: rgba(0, 0, 0, 0.123);
+
+        }
+
+        // Hover de sub contenedor de formulario de contacto adaptacion mobile
+        div.container__form__contacto:hover{
+
+            background-color: rgba(201, 0, 0, 0.692);
+            border: none;
+            border-radius: 10px rgba(73, 0, 0, 0.678);
+
+        }
+    }
+}
+
+// Fin contacto.html adpatacion mobile
+
+} // Cierre media screen

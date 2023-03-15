@@ -1,0 +1,107 @@
+// Importacion de variables
+@import '../utilities/variables';
+
+body {
+
+    // Inicio de navegador
+    
+        nav{
+            
+            div{
+    
+                // Enlace de logo a la izquierda del nav
+                a.navbar-brand{
+    
+                    // Imagen logo a la izquierda del nav
+                    img.logo{
+
+                        width: 120px;
+                        height: 70px; 
+    
+                        // Animacion logo a la izquierda del nav
+    
+                        // Nombre de la animacion
+                        animation-name: anime--logo--nav;
+                        // Ciclos de ejecucion
+                        animation-iteration-count: 1;
+                        // velocidad del efecto de animacion
+                        animation-timing-function: ease-out;
+                        // Duracion de la animacion
+                        animation-duration: 2s;
+                        // Delay que demora la animacion al cargar la pagina
+                        animation-delay: 1s;
+    
+                    @keyframes anime--logo--nav {
+    
+                        0%{
+    
+                            background-color: transparent;
+                            border-radius: 20px;
+                            padding: 30px;
+    
+                        }
+    
+                        50%{
+    
+                            background-color: transparent;
+                            border: 20px;
+    
+                        }
+    
+                        100%{
+    
+                            background-color: transparent;
+                            border-radius: 20px;
+    
+                        }
+                        
+                    }  
+    
+    
+    
+                    }
+                }
+    
+                // Hover del enlace de logo
+                a.navbar-brand:hover{
+    
+                    background-color: rgba(0, 0, 0, 0.397);
+                    border-radius: 20px;  
+    
+                }
+    
+                div{
+    
+                    ul{
+    
+                        li{
+    
+                            display: flex;
+                            align-items: center;
+    
+                            // Enlaces de redireccion del nav
+                            a.nav-link{
+                                
+                                margin-left: 60px;
+                                margin-right: 60px;
+                                padding: 1px;
+                                border-radius: 12px;
+    
+                            }
+    
+                            // Hover de los enlaces de redireccion del nav
+                            a.nav-link:hover{
+    
+                                background-color: $color--enlaces;
+                                padding: 8px;
+                                border-radius: 12px;
+    
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+    // Fin de navegador
+}

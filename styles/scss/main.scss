@@ -1,0 +1,38 @@
+// Importacion de base
+
+    // Reseteo de pagina
+    @import 'base/reset';
+
+    // Typografias
+    @import 'base/typo';
+
+// Importacion de layout
+
+    // Header
+    @import 'layout/header';
+
+    // Footer
+    @import 'layout/footer';
+
+// Importacion de utilities
+
+    // variables
+    @import 'utilities/variables';
+
+// Importacion de views o paginas
+
+    // Acerca de nosotros
+    @import 'views/acerca-de-nosotros';
+
+    // Contacto
+    @import 'views/contacto';
+
+    // Index
+    @import 'views/index';
+
+    // Novedades
+    @import 'views/novedades';
+
+    // Ofertas
+    @import 'views/ofertas';
+

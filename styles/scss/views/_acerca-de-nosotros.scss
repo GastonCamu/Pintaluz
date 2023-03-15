@@ -1,0 +1,89 @@
+// Inicio acerca de nosotros.html
+
+body{
+
+    section{
+
+        // Contenedor principal de acerca de nosotros. contiene un titulo
+        article{
+
+            display: flex;
+            flex-flow: column;
+            width: 60%;
+            margin: 20px;
+
+            h1{
+
+                font-size: 45px;
+
+            }
+
+            // Sub contenedor de acerca de nosotros. contiene un parrafo
+            div{
+
+                p{
+
+                    font-size: 20px;
+
+                }
+            }
+        }
+    }
+}
+
+// Fin acerca de nosotros.html
+
+// Adaptacion mobile
+
+// Apertura media screen
+@media screen and (max-width: 770px){
+
+// Inicio acerca de nosotros.html adaptacion mobile
+
+body{
+
+    section.acerca-de-nosotros{
+
+        display: flex;
+        align-items: center;
+
+        // Contenedor principal de acerca de nosotros que contiene un titulo
+        article{
+
+            display: flex;
+            align-items: center;
+            flex-flow: column;
+            width: 100%;
+            margin: 10px;
+
+            h1{
+
+                font-size: 40px;
+
+            }
+
+            // Sub contenedor de acerca de nosotros que contiene un parrafo
+            div{
+
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+                width: 80%;
+                margin: 10px;
+
+                p{
+
+                    margin-bottom: 20px;
+                    font-size: 20px;
+                    text-align: center;
+
+                }
+            }
+        }
+    }
+}
+
+
+// Fin acerca de nosotros.html adaptacion mobile
+
+}  // Cierre media screen

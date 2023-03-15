@@ -1,0 +1,85 @@
+// Inicio novedades.html
+
+body{
+
+    // Contenedor principal de novedades
+    section.novedades{
+
+        display: flex;
+        flex-flow: column;
+
+        // Sub contenedor de novedades que contiene titulo, img y un parrafo
+        article{
+
+            h2{
+
+                font-size: 35px;
+
+            }
+
+            img{
+
+                width: 35rem;
+
+            }
+            p{
+
+                font-size: 20px;
+
+            }
+        }
+    }
+}
+
+// Fin de novedades.html
+
+// Adaptacion mobile
+
+// Apertura media screen
+@media screen and (max-width: 770px){
+
+// Inicio novedades.html adaptacion mobile
+
+body{
+
+    // Contenedor principal de novedades
+    section.novedades{
+
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+
+        // Sub contenedor de novedades que contiene titulo, img y un parrafo
+        article{
+
+            text-align: center;
+            width: 20rem;
+            margin: 20px;
+
+            h2{
+
+                font-size: 40px;
+                margin: 5px;
+
+            }
+
+            img{
+
+                width: 20rem;
+                margin: 5px;
+
+            }
+
+            p{
+
+                font-size: 23px;
+                margin: 10px;
+
+            }
+        }
+    }
+}
+
+// Fin de novedades.html adaptacion mobile
+
+} // Cierre media screen

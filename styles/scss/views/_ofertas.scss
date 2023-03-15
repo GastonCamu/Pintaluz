@@ -1,0 +1,80 @@
+// Inicio ofertas.html
+
+body{
+
+    // Contenedor principal de oferta
+    section.ofertas{
+
+        article{
+
+            margin: 10px;
+
+            // Sub contenedor de parrafo
+            div.ofertas__div--p{
+
+                p{
+
+                    font-size: 20px
+
+                }
+            }
+
+            // elemento video de youtube
+            iframe.video__oferta{
+
+                width: 750px;
+                height: 350px;
+
+            }
+        }
+    }
+}
+
+// Fin ofertas.html
+
+// Adaptacion mobile
+
+// Apertura media screen
+@media screen and (max-width: 770px){
+
+// Inicio ofertas.html adaptacion mobile
+
+body{
+
+    // Contenedor principal de oferta
+    section.ofertas{
+
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+
+        article{
+
+            display: flex;
+            align-items: center;
+            margin: 5px;
+
+            // Sub contenedor de parrafo
+            div.ofertas__div--p{
+                p{
+
+                    font-size: 20px;
+                    width: 100%;
+
+                }
+            }
+
+            // Elemento video de youtube
+            iframe.video__oferta{
+
+                width: 140%;
+                height: 15rem;
+
+            }
+        }
+    }
+}
+
+// Fin ofertas.html adaptacion mobile
+
+} // Cierre media screen

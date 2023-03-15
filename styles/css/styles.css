@@ -54,6 +54,7 @@ body nav div div ul li a.nav-link:hover {
   padding: 8px;
   border-radius: 12px;
 }
+
 body footer {
   background-color: #4C4C4C;
   padding-top: 10px;
@@ -87,31 +88,81 @@ body footer div.container div.footer__images a img.footer__images--img:hover {
   height: 100px;
 }
 
-body section.ofertas article {
-  margin: 10px;
+@media screen and (max-width: 770px) {
+  body footer {
+    display: grid;
+    grid-template-areas: "nav          nav       " "carousel     carousel  " "footer       footer    ";
+    background-color: rgba(0, 0, 0, 0.74);
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  body footer div.container {
+    text-align: center;
+    grid-area: footer;
+    display: block;
+  }
+  body footer div.container div.footer-text {
+    font-size: 16px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+    color: white;
+    font-weight: bolder;
+  }
+  body footer div.container div.footer__images a img.footer__images--img {
+    width: 50px;
+    height: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  body nav.navbar {
+    grid-area: nav;
+  }
+  body div#carouselExampleAutoplaying {
+    grid-area: carousel;
+  }
 }
-body section.ofertas article div.ofertas__div--p p {
-  font-size: 20px;
-}
-body section.ofertas article iframe.video__oferta {
-  width: 750px;
-  height: 350px;
-}
-
-body section.novedades {
+body section article {
   display: flex;
   flex-flow: column;
+  width: 60%;
+  margin: 20px;
 }
-body section.novedades article h2 {
-  font-size: 35px;
+body section article h1 {
+  font-size: 45px;
 }
-body section.novedades article img {
-  width: 35rem;
-}
-body section.novedades article p {
+body section article div p {
   font-size: 20px;
 }
 
+@media screen and (max-width: 770px) {
+  body section.acerca-de-nosotros {
+    display: flex;
+    align-items: center;
+  }
+  body section.acerca-de-nosotros article {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    width: 100%;
+    margin: 10px;
+  }
+  body section.acerca-de-nosotros article h1 {
+    font-size: 40px;
+  }
+  body section.acerca-de-nosotros article div {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 80%;
+    margin: 10px;
+  }
+  body section.acerca-de-nosotros article div p {
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+}
 body div.container__contacto {
   display: flex;
   justify-content: space-evenly;
@@ -155,92 +206,7 @@ body div.master__container__form div.container__form__contacto:hover {
   border-radius: 10px rgba(73, 0, 0, 0.678);
 }
 
-body section article {
-  display: flex;
-  flex-flow: column;
-  width: 60%;
-  margin: 20px;
-}
-body section article h1 {
-  font-size: 45px;
-}
-body section article div p {
-  font-size: 20px;
-}
-
 @media screen and (max-width: 770px) {
-  body footer {
-    display: grid;
-    grid-template-areas: "nav          nav       " "carousel     carousel  " "footer       footer    ";
-    background-color: rgba(0, 0, 0, 0.74);
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
-  body footer div.container {
-    text-align: center;
-    grid-area: footer;
-    display: block;
-  }
-  body footer div.container div.footer-text {
-    font-size: 16px;
-    padding-left: 5px;
-    padding-right: 5px;
-    width: 100%;
-    color: white;
-    font-weight: bolder;
-  }
-  body footer div.container div.footer__images a img.footer__images--img {
-    width: 50px;
-    height: 50px;
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-  body nav.navbar {
-    grid-area: nav;
-  }
-  body div#carouselExampleAutoplaying {
-    grid-area: carousel;
-  }
-  body section.ofertas {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-  }
-  body section.ofertas article {
-    display: flex;
-    align-items: center;
-    margin: 5px;
-  }
-  body section.ofertas article div.ofertas__div--p p {
-    font-size: 20px;
-    width: 100%;
-  }
-  body section.ofertas article iframe.video__oferta {
-    width: 140%;
-    height: 15rem;
-  }
-  body section.novedades {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-  }
-  body section.novedades article {
-    text-align: center;
-    width: 20rem;
-    margin: 20px;
-  }
-  body section.novedades article h2 {
-    font-size: 40px;
-    margin: 5px;
-  }
-  body section.novedades article img {
-    width: 20rem;
-    margin: 5px;
-  }
-  body section.novedades article p {
-    font-size: 23px;
-    margin: 10px;
-  }
   body div.container__contacto {
     display: flex;
     flex-direction: column;
@@ -282,31 +248,74 @@ body section article div p {
     border: none;
     border-radius: 10px rgba(73, 0, 0, 0.678);
   }
-  body section.acerca-de-nosotros {
+}
+body section.novedades {
+  display: flex;
+  flex-flow: column;
+}
+body section.novedades article h2 {
+  font-size: 35px;
+}
+body section.novedades article img {
+  width: 35rem;
+}
+body section.novedades article p {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 770px) {
+  body section.novedades {
     display: flex;
-    align-items: center;
-  }
-  body section.acerca-de-nosotros article {
-    display: flex;
-    align-items: center;
     flex-flow: column;
-    width: 100%;
-    margin: 10px;
-  }
-  body section.acerca-de-nosotros article h1 {
-    font-size: 40px;
-  }
-  body section.acerca-de-nosotros article div {
-    display: flex;
-    flex-flow: column;
     align-items: center;
-    width: 80%;
-    margin: 10px;
   }
-  body section.acerca-de-nosotros article div p {
-    margin-bottom: 20px;
-    font-size: 20px;
+  body section.novedades article {
     text-align: center;
+    width: 20rem;
+    margin: 20px;
+  }
+  body section.novedades article h2 {
+    font-size: 40px;
+    margin: 5px;
+  }
+  body section.novedades article img {
+    width: 20rem;
+    margin: 5px;
+  }
+  body section.novedades article p {
+    font-size: 23px;
+    margin: 10px;
+  }
+}
+body section.ofertas article {
+  margin: 10px;
+}
+body section.ofertas article div.ofertas__div--p p {
+  font-size: 20px;
+}
+body section.ofertas article iframe.video__oferta {
+  width: 750px;
+  height: 350px;
+}
+
+@media screen and (max-width: 770px) {
+  body section.ofertas {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+  body section.ofertas article {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+  }
+  body section.ofertas article div.ofertas__div--p p {
+    font-size: 20px;
+    width: 100%;
+  }
+  body section.ofertas article iframe.video__oferta {
+    width: 140%;
+    height: 15rem;
   }
 }
 
